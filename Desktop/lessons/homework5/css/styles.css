@@ -1,0 +1,111 @@
+body {
+  padding-bottom: 60px;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 1100px;
+  height: 800px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  text-align: center;
+}
+
+.float-row {
+  background-color: #c4c4c4;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
+.float-item {
+  width: 200px;
+  height: 200px;
+}
+.float-item-group {
+  background-color: #e6e6e6;
+  display: block;
+  min-height: 200px;
+}
+.float-item-1 {
+  float: left;
+  background-color: #fc8f8f;
+  height: 200px;
+  width: 200px;
+}
+.float-item-2 {
+  background-color: #fc8f8f;
+  float: right;
+  height: 200px;
+  width: 200px;
+}
+/* Вирішення проблеми з порядком елементів */
+.float-item-wrapper {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.float-item-group + .float-item-group {
+  margin-top: 50px;
+}
+.float-item-3 {
+  height: 200px;
+  width: 200px;
+  background-color: #fc8f8f;
+  float: left;
+}
+.float-item-4 {
+  height: 100px;
+  width: 100px;
+  background-color: #fc8f8f;
+}
+.float-item-4 + .float-item-4 {
+  margin-left: 10px;
+}
+.float-right {
+  float: right;
+}
+.item-group {
+  display: flex;
+}
+.float-item.item-group {
+  width: auto;
+}
+.float-item-5 {
+  width: 200px;
+  height: 200px;
+  background-color: #fc8f8f;
+}
+.float-item-5 + .float-item-5 {
+  margin-left: 10px;
+}
+.float-left {
+  float: left;
+}
+.group-3 .float-item {
+  width: auto;
+  display: flex;
+}
+.float-item-1,
+.float-item-2,
+.float-item-3,
+.float-item-4,
+.float-item-5 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 64px;
+}
+.float-item-4 {
+  font-size: 36px;
+}
