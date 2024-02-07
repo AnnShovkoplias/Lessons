@@ -25,6 +25,7 @@ body {
 .float-item {
   width: 200px;
   height: 200px;
+  line-height: 200px;
 }
 .float-item-group {
   background-color: #e6e6e6;
@@ -65,6 +66,7 @@ body {
   height: 100px;
   width: 100px;
   background-color: #fc8f8f;
+  line-height: 100px;
 }
 .float-item-4 + .float-item-4 {
   margin-left: 10px;
@@ -72,9 +74,7 @@ body {
 .float-right {
   float: right;
 }
-.item-group {
-  display: flex;
-}
+
 .float-item.item-group {
   width: auto;
 }
@@ -91,7 +91,6 @@ body {
 }
 .group-3 .float-item {
   width: auto;
-  display: flex;
 }
 .float-item-1,
 .float-item-2,
@@ -99,7 +98,6 @@ body {
 .float-item-4,
 .float-item-5 {
   text-align: center;
-  display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
@@ -108,4 +106,10 @@ body {
 }
 .float-item-4 {
   font-size: 36px;
+}
+.float-item-1,
+.float-item-3,
+.float-item-4,
+.float-item-5 {
+  float: left;
 }
